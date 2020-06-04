@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+sourceCompatibility = 1.8
+
+group 'com.jayfella'
+version '1.0.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compileOnly "org.jmonkeyengine:jme3-core:3.3.2-stable"
+    compileOnly "com.simsilica:lemur:1.13.0"
+    compileOnly "com.simsilica:lemur-proto:1.11.0"
+
+    implementation "org.reflections:reflections:0.9.11"
+}
