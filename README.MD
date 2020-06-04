@@ -1,5 +1,13 @@
 ### Property Inspector
 
+ [ ![Download](https://api.bintray.com/packages/jayfella/com.jayfella/property-inspector/images/download.svg) ](https://bintray.com/jayfella/com.jayfella/property-inspector/_latestVersion) 
+
+```java
+dependencies() {
+    implementation "com.jayfella:property-inspector:1.0.0"
+}
+```
+
 Allows the editing of any Object properties via jMonkey Scene Objects called JmeComponents.
 properties must have a JmeComponent associated with it to be able to edit it.
 
